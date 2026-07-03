@@ -169,7 +169,7 @@ services:
     container_name: p38-emit
     working_dir: /work
     command: >
-      bash -c "pip install --quiet kafka-python && python src/p38_cand_emit.py --realtime --interval 30"
+      bash -c "pip install --quiet kafka-python numpy pyyaml && python src/p38_cand_emit.py --realtime --interval 30"
     environment:
       KAFKA_BOOTSTRAP: "kafka:29092"
       P38_TOPIC: "sse.candidate.score"
