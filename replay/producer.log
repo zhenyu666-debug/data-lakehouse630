@@ -1,0 +1,14 @@
+input=data/raw/UserBehavior.csv kafka=localhost:9092 topic=user-behavior speedup=0.0
+rows=997413
+data range: 2017-11-25 00:38:37 -> 2017-12-03 17:59:41 (997413 rows)
+sending...
+sent 100000/997413 (10.0%) 13,810 msg/s
+sent 200000/997413 (20.1%) 13,100 msg/s
+sent 300000/997413 (30.1%) 14,005 msg/s
+sent 400000/997413 (40.1%) 14,298 msg/s
+sent 500000/997413 (50.1%) 14,847 msg/s
+sent 600000/997413 (60.2%) 15,159 msg/s
+sent 700000/997413 (70.2%) 15,088 msg/s
+sent 800000/997413 (80.2%) 15,309 msg/s
+sent 900000/997413 (90.2%) 14,641 msg/s
+done sent=997413 elapsed=68.75s rate=14,509 msg/s

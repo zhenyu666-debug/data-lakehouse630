@@ -1,0 +1,8 @@
+feat: init real-time lakehouse project (Kafka/Flink/Iceberg/Trino)
+
+- docker-compose: Kafka 7.6.1, Flink 1.18.1, Trino 459, MinIO, Iceberg REST
+- Flink SQL jobs: DWD detail table + 1-min PV/UV + 1-h item hot (Tumbling/Hopping window)
+- Kafka replay producer (v1 + v2) for CSV to Kafka backfill
+- startup.ps1 one-click bootstrap script (Docker + JAR download + topic + replay)
+- Trino OLAP queries: PV/UV, TopN items, funnel, RFM analysis
+- docs: ARCHITECTURE.md (Mermaid diagram), DATASET.md (Tianchi UserBehavior)

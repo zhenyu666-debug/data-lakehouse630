@@ -2,6 +2,8 @@
 SET 'execution.runtime-mode' = 'streaming';
 SET 'execution.checkpointing.interval' = '30 s';
 SET 'state.backend' = 'hashmap';
+SET 'parallelism.default' = '1';
+SET 'execution.restart-strategy' = 'none';
 
 -- Catalog & Database
 CREATE CATALOG iceberg_catalog WITH (
@@ -78,10 +80,10 @@ CREATE TABLE IF NOT EXISTS default_catalog.default_database.kafka_user_behavior 
 ) WITH (
     'connector'                       = 'kafka',
     'topic'                           = 'user-behavior',
-    'properties.bootstrap.servers'     = 'kafka:29092',
-    'properties.group.id'             = 'flink-lakehouse-consumer',
+    'properties.bootstrap.servers'      = 'kafka:29092',
+    'properties.group.id'              = 'flink-lakehouse-consumer',
     'format'                          = 'json',
-    'json.ignore-parse-errors'        = 'true',
+    'json.ignore-parse-errors'       = 'true',
     'scan.startup.mode'               = 'earliest-offset'
 );
 

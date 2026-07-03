@@ -1,0 +1,22 @@
+Reading CSV: data-lakehouse/data/raw/UserBehavior.csv
+Kafka: localhost:9092, Topic: user-behavior
+Speedup: 0.0x
+Scanning dataset...
+Data range: 1511541517 -> 1512295181 (997,413 total records)
+Original time range: 2017-11-25 00:38:37 -> 2017-12-03 17:59:41
+
+Starting to send messages...
+Sent 100,000 / 997,413 (10.0%) - 7,087 msg/s
+Sent 200,000 / 997,413 (20.1%) - 6,697 msg/s
+Sent 300,000 / 997,413 (30.1%) - 6,582 msg/s
+Sent 400,000 / 997,413 (40.1%) - 6,648 msg/s
+Sent 500,000 / 997,413 (50.1%) - 6,743 msg/s
+Sent 600,000 / 997,413 (60.2%) - 6,749 msg/s
+Sent 700,000 / 997,413 (70.2%) - 6,746 msg/s
+Sent 800,000 / 997,413 (80.2%) - 6,738 msg/s
+Sent 900,000 / 997,413 (90.2%) - 6,750 msg/s
+
+Complete!
+Total sent: 997,413 messages
+Time elapsed: 149.68 seconds
+Average rate: 6,664 messages/second

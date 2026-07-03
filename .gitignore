@@ -1,59 +1,16 @@
-# Data
-data/raw/*.csv
-data/raw/*.zip
-data/processed/
+# Large data files
+*.csv
+*.csv.gz
+*.parquet
+data/
+*.db
 
-# Flink libs (auto-downloaded via startup script)
-flink/lib/*.jar
-flink/lib/*.jar.sha1
-
-# Iceberg REST image JARs (build from Dockerfile)
-iceberg-rest-image-all.jar
-iceberg-rest-new.jar
+# Flink jars
+flink/lib/
 iceberg-rest/lib/
-iceberg-rest/Dockerfile
 
-# Python
-__pycache__/
-*.pyc
-*.egg-info/
-.eggs/
-*.egg
+# DuckDB railway datasets
+duckdb_railway/
 
-# Logs
-*.log
-*.err
-
-# IDE
-.idea/
-.vscode/
-*.iml
-
-# Docker
-.docker/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Temporary / debug files (root level)
-*.tmp
-*.bak
-*.html
-*.json
-start.bat
-flink-versions.html
-sql-client-defaults.yaml
-_status.py
-_kafka_check.py
-_test_trino.py
-data_counts.py
-write_sql.py
-verify.py
-verify.ps1
-verify2.ps1
-verify3.py
-
-# Agent metadata
-.claude/
-LOOP-STATE.md
+# All jar files
+*.jar

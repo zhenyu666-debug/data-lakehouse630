@@ -1,0 +1,9 @@
+## Summary
+- Init data-lakehouse630: Kafka 7.6.1 / Flink 1.18.1 / Trino 459 / MinIO / Iceberg REST
+- Flink SQL streaming jobs: DWD + PV/UV (1-min) + Item Hot (1-h)
+- startup.ps1 one-click bootstrap
+- Trino OLAP queries + docs
+
+## Test plan
+- [x] No .jar / .csv / node_modules in git history
+- [x] 42 files pushed, verified on GitHub
